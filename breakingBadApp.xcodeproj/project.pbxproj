@@ -45,6 +45,8 @@
 		8745441624CDEC59005A5301 /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440E24CDEC59005A5301 /* CharacterDetailInteractor.swift */; };
 		8745441724CDEC59005A5301 /* CharacterDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440F24CDEC59005A5301 /* CharacterDetailViewOutput.swift */; };
 		8745441824CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */; };
+		8745441E24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441D24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift */; };
+		8745442024CE12BA005A5301 /* CharacterDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441F24CE12BA005A5301 /* CharacterDetailPresenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +103,8 @@
 		8745440E24CDEC59005A5301 /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
 		8745440F24CDEC59005A5301 /* CharacterDetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewOutput.swift; sourceTree = "<group>"; };
 		8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModuleConfigurator.swift; sourceTree = "<group>"; };
+		8745441D24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		8745441F24CE12BA005A5301 /* CharacterDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterTests.swift; sourceTree = "<group>"; };
 		A42C0773BE6D491DB2135858 /* Pods-breakingBadAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.debug.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C54F1218E35D8493DFB39FF7 /* Pods-breakingBadAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.release.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE0729221AEA8CCB708AE4C0 /* Pods-breakingBadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadApp.release.xcconfig"; path = "Target Support Files/Pods-breakingBadApp/Pods-breakingBadApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -322,6 +326,7 @@
 			isa = PBXGroup;
 			children = (
 				8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */,
+				8745441D24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				8745440B24CDEC59005A5301 /* CharacterDetailPresenter.swift */,
+				8745441F24CE12BA005A5301 /* CharacterDetailPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -562,6 +568,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				874543C524CD5DF7005A5301 /* breakingBadAppTests.swift in Sources */,
+				8745442024CE12BA005A5301 /* CharacterDetailPresenterTests.swift in Sources */,
+				8745441E24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

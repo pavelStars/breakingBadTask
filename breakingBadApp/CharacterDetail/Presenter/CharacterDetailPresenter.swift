@@ -7,8 +7,8 @@
 //
 
 class CharacterDetailPresenter {
-    private unowned var view: CharacterDetailViewInput
-    private var interactor: CharacterDetailInteractorInput
+    unowned var view: CharacterDetailViewInput
+    var interactor: CharacterDetailInteractorInput
     private var errorHandler: ErrorHandler?
     private var completionHandler: CharacterDetailCompletionHandler?
     private var viewModel: CharacterViewModel
