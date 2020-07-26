@@ -47,6 +47,10 @@
 		8745441824CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */; };
 		8745441E24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441D24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift */; };
 		8745442024CE12BA005A5301 /* CharacterDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441F24CE12BA005A5301 /* CharacterDetailPresenterTests.swift */; };
+		8745442224CE15F2005A5301 /* CharacterListModuleConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745442124CE15F2005A5301 /* CharacterListModuleConfiguratorTests.swift */; };
+		8745442424CE179E005A5301 /* CharacterListCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745442324CE179E005A5301 /* CharacterListCoordinatorTests.swift */; };
+		8745442624CE18BF005A5301 /* CharacterListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745442524CE18BF005A5301 /* CharacterListPresenterTests.swift */; };
+		8745442824CE1F18005A5301 /* CharacterListInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745442724CE1F18005A5301 /* CharacterListInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +109,10 @@
 		8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModuleConfigurator.swift; sourceTree = "<group>"; };
 		8745441D24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModuleConfiguratorTests.swift; sourceTree = "<group>"; };
 		8745441F24CE12BA005A5301 /* CharacterDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenterTests.swift; sourceTree = "<group>"; };
+		8745442124CE15F2005A5301 /* CharacterListModuleConfiguratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModuleConfiguratorTests.swift; sourceTree = "<group>"; };
+		8745442324CE179E005A5301 /* CharacterListCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListCoordinatorTests.swift; sourceTree = "<group>"; };
+		8745442524CE18BF005A5301 /* CharacterListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListPresenterTests.swift; sourceTree = "<group>"; };
+		8745442724CE1F18005A5301 /* CharacterListInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListInteractorTests.swift; sourceTree = "<group>"; };
 		A42C0773BE6D491DB2135858 /* Pods-breakingBadAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.debug.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C54F1218E35D8493DFB39FF7 /* Pods-breakingBadAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.release.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE0729221AEA8CCB708AE4C0 /* Pods-breakingBadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadApp.release.xcconfig"; path = "Target Support Files/Pods-breakingBadApp/Pods-breakingBadApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -245,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				874543D724CD5F15005A5301 /* CharacterListModuleConfigurator.swift */,
+				8745442124CE15F2005A5301 /* CharacterListModuleConfiguratorTests.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -253,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				874543F324CD6836005A5301 /* CharacterListCoordinator.swift */,
+				8745442324CE179E005A5301 /* CharacterListCoordinatorTests.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -263,6 +273,7 @@
 				874543D124CD5F15005A5301 /* CharacterListInteractorOutput.swift */,
 				874543D324CD5F15005A5301 /* CharacterListInteractorInput.swift */,
 				874543D524CD5F15005A5301 /* CharacterListInteractor.swift */,
+				8745442724CE1F18005A5301 /* CharacterListInteractorTests.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -271,6 +282,7 @@
 			isa = PBXGroup;
 			children = (
 				874543D224CD5F15005A5301 /* CharacterListPresenter.swift */,
+				8745442524CE18BF005A5301 /* CharacterListPresenterTests.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -567,8 +579,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8745442624CE18BF005A5301 /* CharacterListPresenterTests.swift in Sources */,
+				8745442824CE1F18005A5301 /* CharacterListInteractorTests.swift in Sources */,
+				8745442424CE179E005A5301 /* CharacterListCoordinatorTests.swift in Sources */,
 				874543C524CD5DF7005A5301 /* breakingBadAppTests.swift in Sources */,
 				8745442024CE12BA005A5301 /* CharacterDetailPresenterTests.swift in Sources */,
+				8745442224CE15F2005A5301 /* CharacterListModuleConfiguratorTests.swift in Sources */,
 				8745441E24CE0FA7005A5301 /* CharacterDetailModuleConfiguratorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

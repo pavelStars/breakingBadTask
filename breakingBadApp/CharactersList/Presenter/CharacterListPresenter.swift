@@ -6,14 +6,15 @@
 //  Copyright (c) 2020 Pavel Terziyski. All rights reserved.
 //
 
-enum CharacterSection<T> {
+enum CharacterSection<T>{
     case empty
     case viewModels([T])
+
 }
 
 class CharacterListPresenter {
     unowned var view: CharacterListViewInput
-    private var interactor: CharacterListInteractorInput
+    var interactor: CharacterListInteractorInput
     private var errorHandler: ErrorHandler?
     private var completionHandler: CharacterListCompletionHandler?
     private var characterSection: CharacterSection<CharacterViewModel> = .empty

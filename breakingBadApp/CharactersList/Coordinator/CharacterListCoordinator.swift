@@ -37,7 +37,6 @@ class CharacterListCoordinator: Coordinator {
 
     private func startDetailScreen(characterViewModel: CharacterViewModel) {
         let viewController = CharacterDetailModuleConfigurator.createModule(errorHandler: errorHandler, completionHandler: {
-
         }, viewModel: characterViewModel)
         navigationController.pushViewController(viewController, animated: true)
     }

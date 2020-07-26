@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CharacterViewModel {
+struct CharacterViewModel: Equatable {
      let name: String
      let occupations: [String]
      let img: String

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FilmCharacter: Codable {
+struct FilmCharacter: Codable, Equatable {
     let charID: Int
     let name: String
     let birthday: String

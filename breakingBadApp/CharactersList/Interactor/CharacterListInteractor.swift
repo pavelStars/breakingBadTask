@@ -26,13 +26,7 @@ extension CharacterListInteractor: CharacterListInteractorInput {
             case .failure(let error):
                 self?.output?.didLoadDataWithError(error: error)
             }
-
         })
     }
 
-}
-
-// MARK: - AnalyticsTracker
-
-extension CharacterListInteractor {
 }
