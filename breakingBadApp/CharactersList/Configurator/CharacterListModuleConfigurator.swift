@@ -8,7 +8,12 @@
 
 import UIKit
 
-typealias CharacterListCompletionHandler = () -> Void
+enum CharacterRedirectionAction {
+    case lisCharacters
+    case detailCharacter(CharacterViewModel)
+}
+
+typealias CharacterListCompletionHandler = (CharacterRedirectionAction) -> Void
 
 class CharacterListModuleConfigurator {
     public static func createModule(errorHandler: ErrorHandler,

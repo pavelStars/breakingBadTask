@@ -45,6 +45,84 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="815.625"/>
         </scene>
+        <!--Character Detail View Controller-->
+        <scene sceneID="gQS-5g-NyR">
+            <objects>
+                <viewController storyboardIdentifier="CharacterDetailViewController" id="UIj-bM-tDw" customClass="CharacterDetailViewController" customModule="breakingBadApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ioj-ht-8AF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l80-eJ-OzC">
+                                <rect key="frame" x="184.5" y="64" width="45" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NickName" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mw1-x3-PSj">
+                                <rect key="frame" x="20" y="92.5" width="79" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h3-pQ-imn">
+                                <rect key="frame" x="20" y="133" width="49.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Season Appearance" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggq-6J-MfC">
+                                <rect key="frame" x="240.5" y="133" width="153.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Occupation" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPP-Gr-WcT">
+                                <rect key="frame" x="305.5" y="92.5" width="88.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="x4y-S2-JXV">
+                                <rect key="frame" x="134" y="173.5" width="146" height="105"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="105" id="dYO-C6-sbN"/>
+                                    <constraint firstAttribute="width" constant="146" id="gnG-bs-52w"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="d0d-fg-KKQ" firstAttribute="trailing" secondItem="ggq-6J-MfC" secondAttribute="trailing" constant="20" id="2QU-qZ-e7c"/>
+                            <constraint firstItem="ggq-6J-MfC" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="5h3-pQ-imn" secondAttribute="trailing" constant="8" id="7w8-VX-Tn9"/>
+                            <constraint firstItem="lPP-Gr-WcT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Mw1-x3-PSj" secondAttribute="trailing" constant="8" id="96Z-kc-5nS"/>
+                            <constraint firstItem="ggq-6J-MfC" firstAttribute="top" secondItem="lPP-Gr-WcT" secondAttribute="bottom" constant="20" id="9zz-IS-sSS"/>
+                            <constraint firstItem="lPP-Gr-WcT" firstAttribute="top" secondItem="l80-eJ-OzC" secondAttribute="bottom" constant="8" id="AFe-No-Jbc"/>
+                            <constraint firstItem="5h3-pQ-imn" firstAttribute="leading" secondItem="d0d-fg-KKQ" secondAttribute="leading" constant="20" id="CYO-dl-n1o"/>
+                            <constraint firstItem="x4y-S2-JXV" firstAttribute="top" secondItem="5h3-pQ-imn" secondAttribute="bottom" constant="20" id="Cen-M9-1Yh"/>
+                            <constraint firstItem="x4y-S2-JXV" firstAttribute="centerX" secondItem="Ioj-ht-8AF" secondAttribute="centerX" id="Fj8-AQ-ogf"/>
+                            <constraint firstItem="d0d-fg-KKQ" firstAttribute="trailing" secondItem="lPP-Gr-WcT" secondAttribute="trailing" constant="20" id="fkA-ho-JOI"/>
+                            <constraint firstItem="Mw1-x3-PSj" firstAttribute="top" secondItem="l80-eJ-OzC" secondAttribute="bottom" constant="8" id="hD4-20-g6V"/>
+                            <constraint firstItem="l80-eJ-OzC" firstAttribute="centerX" secondItem="Ioj-ht-8AF" secondAttribute="centerX" id="hXR-lJ-rq9"/>
+                            <constraint firstItem="Mw1-x3-PSj" firstAttribute="leading" secondItem="d0d-fg-KKQ" secondAttribute="leading" constant="20" id="jLe-l4-QXw"/>
+                            <constraint firstItem="5h3-pQ-imn" firstAttribute="top" secondItem="lPP-Gr-WcT" secondAttribute="bottom" constant="20" id="tns-dO-uWi"/>
+                            <constraint firstItem="l80-eJ-OzC" firstAttribute="top" secondItem="d0d-fg-KKQ" secondAttribute="top" constant="20" id="zB7-zC-s4u"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d0d-fg-KKQ"/>
+                    </view>
+                    <connections>
+                        <outlet property="characterImageView" destination="x4y-S2-JXV" id="Jj2-cm-2MH"/>
+                        <outlet property="nameLabel" destination="l80-eJ-OzC" id="W6Y-XI-rVx"/>
+                        <outlet property="nickname" destination="Mw1-x3-PSj" id="dJM-ud-s6V"/>
+                        <outlet property="ocuppation" destination="lPP-Gr-WcT" id="SSB-i0-1wC"/>
+                        <outlet property="seasonAppearance" destination="ggq-6J-MfC" id="tDL-6k-Yh0"/>
+                        <outlet property="status" destination="5h3-pQ-imn" id="lwg-i2-wox"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oa5-iT-iEz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="963.76811594202911" y="815.625"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -94,4 +172,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="avatar" width="246" height="205"/>
+    </resources>
 </document>

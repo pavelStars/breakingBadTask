@@ -8,4 +8,5 @@
 
 protocol CharacterListViewInput: Activable {
     func display(characterSection: CharacterSection<CharacterViewModel>)
+    func showAllSeasonPicker(data: [Int])
 }

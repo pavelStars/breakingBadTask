@@ -20,9 +20,26 @@ class CharacterListCoordinator: Coordinator {
 
     func start() {
         let characterListModule = CharacterListModuleConfigurator.createModule(errorHandler: errorHandler,
-                                                                               completionHandler: {
+                                                                               completionHandler: { [weak self] action in
+                                                                                   self?.handleStationsRedirectionAction(action)
         })
         navigationController.pushViewController(characterListModule, animated: true)
+    }
+
+    private func handleStationsRedirectionAction(_ action: CharacterRedirectionAction) {
+        switch action {
+        case .lisCharacters:
+            break
+        case .detailCharacter(let viewModel):
+            startDetailScreen(characterViewModel: viewModel)
+        }
+    }
+
+    private func startDetailScreen(characterViewModel: CharacterViewModel) {
+        let viewController = CharacterDetailModuleConfigurator.createModule(errorHandler: errorHandler, completionHandler: {
+
+        }, viewModel: characterViewModel)
+        navigationController.pushViewController(viewController, animated: true)
     }
 }
 

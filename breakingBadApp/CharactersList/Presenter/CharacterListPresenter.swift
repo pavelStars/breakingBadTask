@@ -13,9 +13,9 @@ enum CharacterSection<T> {
 
 class CharacterListPresenter {
     unowned var view: CharacterListViewInput
-    var interactor: CharacterListInteractorInput
-    var errorHandler: ErrorHandler?
-    var completionHandler: CharacterListCompletionHandler?
+    private var interactor: CharacterListInteractorInput
+    private var errorHandler: ErrorHandler?
+    private var completionHandler: CharacterListCompletionHandler?
     private var characterSection: CharacterSection<CharacterViewModel> = .empty
 
     private var allCharacters: [FilmCharacter] = [] {
@@ -52,11 +52,23 @@ class CharacterListPresenter {
         view.startActivityIndicator()
         interactor.loadCharacters()
     }
+
+    private func showAllSeasonsPicker(info: [Int]) {
+        view.showAllSeasonPicker(data: info)
+    }
 }
 
 // MARK: - CharacterListPresenterViewOutput
 
 extension CharacterListPresenter: CharacterListViewOutput {
+    func didSelectSeasonToSortBy(season: Int, isFiltering: Bool) {
+        filteredCharacters = allCharacters.filter({ $0.appearance.contains(season) })
+    }
+
+    func didTapOnSeasonFiltering() {
+        showAllSeasonsPicker(info: [1, 2, 3, 4, 5])
+    }
+
     func didMakeSearchWithString(string: String, isFiltering: Bool) {
         guard isFiltering else {
             filteredCharacters = allCharacters
@@ -65,7 +77,8 @@ extension CharacterListPresenter: CharacterListViewOutput {
         filteredCharacters = allCharacters.filter({ $0.name.contains(string) })
     }
 
-    func didTap(stationViewModel: CharacterViewModel) {
+    func didTap(characterViewModel: CharacterViewModel) {
+        completionHandler?(.detailCharacter(characterViewModel))
     }
 
     func viewIsReady() {

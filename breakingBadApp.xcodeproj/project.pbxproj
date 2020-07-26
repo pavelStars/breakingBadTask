@@ -37,6 +37,14 @@
 		874543FF24CD7AC9005A5301 /* CharactersWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874543FE24CD7AC9005A5301 /* CharactersWebService.swift */; };
 		8745440224CD7BEF005A5301 /* FilmCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440124CD7BEF005A5301 /* FilmCharacter.swift */; };
 		8745440724CD8975005A5301 /* CharacterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440624CD8975005A5301 /* CharacterViewModel.swift */; };
+		8745441124CDEC59005A5301 /* CharacterDetailViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440924CDEC59005A5301 /* CharacterDetailViewInput.swift */; };
+		8745441224CDEC59005A5301 /* CharacterDetailInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440A24CDEC59005A5301 /* CharacterDetailInteractorOutput.swift */; };
+		8745441324CDEC59005A5301 /* CharacterDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440B24CDEC59005A5301 /* CharacterDetailPresenter.swift */; };
+		8745441424CDEC59005A5301 /* CharacterDetailInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440C24CDEC59005A5301 /* CharacterDetailInteractorInput.swift */; };
+		8745441524CDEC59005A5301 /* CharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440D24CDEC59005A5301 /* CharacterDetailViewController.swift */; };
+		8745441624CDEC59005A5301 /* CharacterDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440E24CDEC59005A5301 /* CharacterDetailInteractor.swift */; };
+		8745441724CDEC59005A5301 /* CharacterDetailViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745440F24CDEC59005A5301 /* CharacterDetailViewOutput.swift */; };
+		8745441824CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,14 @@
 		874543FE24CD7AC9005A5301 /* CharactersWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersWebService.swift; sourceTree = "<group>"; };
 		8745440124CD7BEF005A5301 /* FilmCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCharacter.swift; sourceTree = "<group>"; };
 		8745440624CD8975005A5301 /* CharacterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterViewModel.swift; sourceTree = "<group>"; };
+		8745440924CDEC59005A5301 /* CharacterDetailViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewInput.swift; sourceTree = "<group>"; };
+		8745440A24CDEC59005A5301 /* CharacterDetailInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractorOutput.swift; sourceTree = "<group>"; };
+		8745440B24CDEC59005A5301 /* CharacterDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailPresenter.swift; sourceTree = "<group>"; };
+		8745440C24CDEC59005A5301 /* CharacterDetailInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractorInput.swift; sourceTree = "<group>"; };
+		8745440D24CDEC59005A5301 /* CharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewController.swift; sourceTree = "<group>"; };
+		8745440E24CDEC59005A5301 /* CharacterDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailInteractor.swift; sourceTree = "<group>"; };
+		8745440F24CDEC59005A5301 /* CharacterDetailViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailViewOutput.swift; sourceTree = "<group>"; };
+		8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailModuleConfigurator.swift; sourceTree = "<group>"; };
 		A42C0773BE6D491DB2135858 /* Pods-breakingBadAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.debug.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C54F1218E35D8493DFB39FF7 /* Pods-breakingBadAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadAppTests.release.xcconfig"; path = "Target Support Files/Pods-breakingBadAppTests/Pods-breakingBadAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		CE0729221AEA8CCB708AE4C0 /* Pods-breakingBadApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-breakingBadApp.release.xcconfig"; path = "Target Support Files/Pods-breakingBadApp/Pods-breakingBadApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +169,7 @@
 		874543AC24CD5DF1005A5301 /* breakingBadApp */ = {
 			isa = PBXGroup;
 			children = (
+				8745440824CDEC3D005A5301 /* CharacterDetail */,
 				874543CF24CD5EE6005A5301 /* CharactersList */,
 				874543E024CD5FB6005A5301 /* Common */,
 				8745440024CD7BDE005A5301 /* Model */,
@@ -288,6 +305,53 @@
 				8745440624CD8975005A5301 /* CharacterViewModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8745440824CDEC3D005A5301 /* CharacterDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8745441924CE039C005A5301 /* Configurator */,
+				8745441A24CE03D9005A5301 /* Interactor */,
+				8745441B24CE03EF005A5301 /* Presenter */,
+				8745441C24CE03FD005A5301 /* View */,
+			);
+			path = CharacterDetail;
+			sourceTree = "<group>";
+		};
+		8745441924CE039C005A5301 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				8745441024CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		8745441A24CE03D9005A5301 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				8745440A24CDEC59005A5301 /* CharacterDetailInteractorOutput.swift */,
+				8745440C24CDEC59005A5301 /* CharacterDetailInteractorInput.swift */,
+				8745440E24CDEC59005A5301 /* CharacterDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		8745441B24CE03EF005A5301 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8745440B24CDEC59005A5301 /* CharacterDetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8745441C24CE03FD005A5301 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8745440924CDEC59005A5301 /* CharacterDetailViewInput.swift */,
+				8745440D24CDEC59005A5301 /* CharacterDetailViewController.swift */,
+				8745440F24CDEC59005A5301 /* CharacterDetailViewOutput.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,20 +530,28 @@
 				874543FF24CD7AC9005A5301 /* CharactersWebService.swift in Sources */,
 				874543EE24CD656D005A5301 /* UIViewController+ErrorHandler.swift in Sources */,
 				874543DE24CD5F15005A5301 /* CharacterListViewOutput.swift in Sources */,
+				8745441324CDEC59005A5301 /* CharacterDetailPresenter.swift in Sources */,
 				8745440724CD8975005A5301 /* CharacterViewModel.swift in Sources */,
 				874543E624CD64C9005A5301 /* NSObject+ClassName.swift in Sources */,
+				8745441624CDEC59005A5301 /* CharacterDetailInteractor.swift in Sources */,
 				874543D824CD5F15005A5301 /* CharacterListViewInput.swift in Sources */,
+				8745441824CDEC59005A5301 /* CharacterDetailModuleConfigurator.swift in Sources */,
 				874543FB24CD73A5005A5301 /* CharacterTableViewCell.swift in Sources */,
 				874543DC24CD5F15005A5301 /* CharacterListViewController.swift in Sources */,
+				8745441124CDEC59005A5301 /* CharacterDetailViewInput.swift in Sources */,
 				874543EC24CD6547005A5301 /* StoryboardProvider.swift in Sources */,
+				8745441224CDEC59005A5301 /* CharacterDetailInteractorOutput.swift in Sources */,
 				874543DA24CD5F15005A5301 /* CharacterListPresenter.swift in Sources */,
+				8745441724CDEC59005A5301 /* CharacterDetailViewOutput.swift in Sources */,
 				874543D924CD5F15005A5301 /* CharacterListInteractorOutput.swift in Sources */,
 				874543E824CD64E9005A5301 /* Activable.swift in Sources */,
+				8745441424CDEC59005A5301 /* CharacterDetailInteractorInput.swift in Sources */,
 				874543DF24CD5F16005A5301 /* CharacterListModuleConfigurator.swift in Sources */,
 				874543DB24CD5F15005A5301 /* CharacterListInteractorInput.swift in Sources */,
 				874543EA24CD6520005A5301 /* ErrorHandler.swift in Sources */,
 				874543F424CD6836005A5301 /* CharacterListCoordinator.swift in Sources */,
 				874543E424CD64A9005A5301 /* UIViewController+StoryBoardCreation.swift in Sources */,
+				8745441524CDEC59005A5301 /* CharacterDetailViewController.swift in Sources */,
 				874543DD24CD5F15005A5301 /* CharacterListInteractor.swift in Sources */,
 				874543F024CD658F005A5301 /* Result+WebService.swift in Sources */,
 			);
