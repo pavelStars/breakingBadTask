@@ -15,7 +15,7 @@ class CharacterListModuleConfigurator {
                                     completionHandler: @escaping CharacterListCompletionHandler) -> UIViewController {
         let storyboard = StoryboardProvider.getStoryboard(of: .main)
         let viewController = CharacterListViewController.controllerInStoryboard(storyboard)
-        let interactor = CharacterListInteractor()
+        let interactor = CharacterListInteractor(webService: CharactersWebService())
         let presenter = CharacterListPresenter(view: viewController, interactor: interactor, errorHandler: errorHandler, completionHandler: completionHandler)
 
         interactor.output = presenter

@@ -6,4 +6,24 @@
 //  Copyright © 2020 Pavel Terziyski. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+public protocol ErrorHandlerProtocol {
+    func handleError(_: Error)
+}
+
+class ErrorHandler: ErrorHandlerProtocol {
+    private(set) unowned var mainViewController: UIViewController
+
+      public init(viewController: UIViewController) {
+          self.mainViewController = viewController
+      }
+
+    public func isCriticalError(_ error: Error) -> Bool {
+         return false
+     }
+
+    public func handleError(_ error: Error) {
+         mainViewController.displayDialog(forError: error)
+     }
+}

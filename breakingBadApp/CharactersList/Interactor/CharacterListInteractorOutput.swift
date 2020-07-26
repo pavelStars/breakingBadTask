@@ -7,4 +7,6 @@
 //
 
 protocol CharacterListInteractorOutput: class {
+    func didFetchCharacters(characters: [FilmCharacter])
+    func didLoadDataWithError(error: Error)
 }

@@ -7,3 +7,25 @@
 //
 
 import Foundation
+
+struct FilmCharacter: Codable {
+    let charID: Int
+    let name: String
+    let birthday: String
+    let occupations: [String]
+    let img: String
+    let status: String
+    let nickname: String
+    let appearance: [Int]
+
+    private enum CodingKeys: String, CodingKey {
+        case charID = "char_id"
+        case name
+        case birthday
+        case occupations = "occupation"
+        case img
+        case status
+        case nickname
+        case appearance
+    }
+}

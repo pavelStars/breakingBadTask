@@ -6,19 +6,19 @@
 //  Copyright © 2020 Pavel Terziyski. All rights reserved.
 //
 
+import SDWebImage
 import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
+    @IBOutlet private weak var name: UILabel!
+    @IBOutlet private weak var characterImageView: UIImageView!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    func configure(viewModel: CharacterViewModel) {
+        name.text = viewModel.name
+        guard let imageURL = URL(string: viewModel.img) else {
+            return
+        }
+        characterImageView.sd_setImage(with: imageURL,
+                                       placeholderImage: UIImage(named: "avatar"))
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }

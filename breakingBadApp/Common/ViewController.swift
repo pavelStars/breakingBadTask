@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private var characterListCoordinator: CharacterListCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +17,16 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startAppButton(_ sender: UIButton) {
-        //startflow
+        // startflow
+
+        let errorHandler = ErrorHandler(viewController: self)
+
+        guard let navigationViewController = navigationController else {
+            return
+        }
+
+        characterListCoordinator = CharacterListCoordinator(navigationController: navigationViewController,
+                                                            errorHandler: errorHandler)
+        characterListCoordinator?.start()
     }
-
 }
-

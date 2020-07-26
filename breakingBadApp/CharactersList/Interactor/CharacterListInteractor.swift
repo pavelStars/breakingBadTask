@@ -8,15 +8,28 @@
 
 class CharacterListInteractor {
     weak var output: CharacterListInteractorOutput?
+    private let webService: CharactersWebServiceProtocol
 
-    init() {
-
+    init(webService: CharactersWebServiceProtocol) {
+        self.webService = webService
     }
 }
 
 // MARK: - CharacterListInteractorInteractorInput
 
 extension CharacterListInteractor: CharacterListInteractorInput {
+    func loadCharacters() {
+        webService.getCharacters(completion: { [weak self] result in
+            switch result {
+            case .success(let characters):
+                self?.output?.didFetchCharacters(characters: characters)
+            case .failure(let error):
+                self?.output?.didLoadDataWithError(error: error)
+            }
+
+        })
+    }
+
 }
 
 // MARK: - AnalyticsTracker

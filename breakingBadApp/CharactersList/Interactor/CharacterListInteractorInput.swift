@@ -7,4 +7,5 @@
 //
 
 protocol CharacterListInteractorInput {
+    func loadCharacters()
 }

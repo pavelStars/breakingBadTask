@@ -8,4 +8,7 @@
 
 protocol CharacterListViewOutput {
     func viewIsReady()
+    func loadCharacters()
+    func didMakeSearchWithString(string: String, isFiltering: Bool)
+    func didTap(stationViewModel: CharacterViewModel)
 }

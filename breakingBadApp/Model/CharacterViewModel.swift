@@ -7,3 +7,22 @@
 //
 
 import Foundation
+
+struct CharacterViewModel {
+     let name: String
+     let occupations: [String]
+     let img: String
+     let status: String
+     let nickname: String
+     let appearance: [Int]
+
+    init(character: FilmCharacter) {
+        name = character.name
+        occupations = character.occupations
+        img = character.img
+        status = character.status
+        nickname = character.nickname
+        appearance = character.appearance
+    }
+
+}
